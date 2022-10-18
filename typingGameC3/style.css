@@ -1,0 +1,32 @@
+.error {
+    background-color: #EA2027;
+}
+
+.highlight {
+    color: #FFC312;
+    text-decoration: underline;
+}
+
+.winner {
+    background-image: url('https://cdn.glitch.me/fe55c52b-f859-4f17-a4c6-1af45426e959%2F6ob.gif');
+}
+
+.rocket {
+    display:block;
+    width: 60px;
+    height: 34px;
+    margin-left: 20px;
+    background: url(https://cdn.glitch.com/fe55c52b-f859-4f17-a4c6-1af45426e959%2Frocket.png?v=1620489294028) right center no-repeat;
+    background-size: 60px;
+}
+
+span::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0def);}
+}
+
