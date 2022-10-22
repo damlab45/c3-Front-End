@@ -42,16 +42,17 @@ const timeGenerator = () => {
   };
 
 
+
 //Stop game
 stopButton.addEventListener(
-    "click",
-    (stopGame = () => {
-      controls.classList.remove("hide");
-      stopButton.classList.add("hide");
-      startButton.classList.remove("hide");
-      clearInterval(interval);
-    })
-  );
+  "click",
+  (stopGame = () => {
+    controls.classList.remove("hide");
+    stopButton.classList.add("hide");
+    startButton.classList.remove("hide");
+    clearInterval(interval);
+  })
+);
 
 function matchCards(img1, img2) {
     if (img1 === img2) { // this code will run if the card images match
@@ -96,7 +97,11 @@ function shuffleCards() {
       let imgTag = card.querySelector(".back-view img"); // find the back-view image tag by querying all the childNodes of the current card element for the '.back-view img' CSS selector
       imgTag.src = `images/img-${arr[i]}.png`; // set the value of the src attribute on the current imgTag to a numbered filename based on our randomized array
       card.addEventListener("click", flipCard); // add the click event listener to the current card to execute a function `flipCard` when clicked
+    
+
   });
+ 
+
 }
 
 
