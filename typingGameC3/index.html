@@ -4,16 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Typing Game</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <button type="button" id="start" class="button">
-        start game <i class="rocket"></i>
-    </button>
+    <main>
+        <h1>Typing game!</h1>
+        <ul id="scores-unordered-list">
+        </ul>
+        <p>Practice your typing skills.<br>Type the highligted words as they appear.
+            <br>
+            Enter your name then click the start button to begin!
+        </p>
+        <div class="new">
+            <label class="sr-only" for="gamer-name">Enter your gamer name.</label>
+            <input type="text" id="gamer-name" placeholder="enter your name"></input>
+            <button type="button" class="button" id="start">start game <i class="rocket"></i></button>
+        </div>
+        
     <p id="quote"></p>
     <p id="message"></p>
-    <input type="text" id="typed-value">
+    <label class="sr-only" for="typed-value">Type the quote.</label>
+    <input type="text" id="typed-value"/>
+</main>
 </body>
+<template id="score-item-template">
+    <li>
+        <label class="score">
+            <span class="score-text"></span>
+        </label>
+    </li>
+</template>
 </html>
-Footer
